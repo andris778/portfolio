@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andris Tiļeckis — Portfolio</title>
+<meta name="description" content="Andris Tiļeckis — programmēšanas tehniķis. Portfolio ar projektiem PHP, JavaScript, C++ un Laravel.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⌘</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-bracket">&lt;</span>Andris<span class="brand-bracket">/&gt;</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Galvenā navigācija">
+      <a href="#about" data-i18n="nav_about">Par mani</a>
+      <a href="#skills" data-i18n="nav_skills">Prasmes</a>
+      <a href="#projects" data-i18n="nav_projects">Projekti</a>
+      <a href="#contact" data-i18n="nav_contact">Kontakti</a>
+    </nav>
+
+    <div class="header-controls">
+      <div class="lang-switch" role="group" aria-label="Valodas izvēle">
+        <button type="button" class="lang-btn" data-lang="lv" aria-pressed="true">LV</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Pārslēgt tumšo/gaišo režīmu">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Atvērt izvēlni" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <div class="editor-window" role="img" aria-label="Koda redaktora logs ar sveiciena ziņu">
+        <div class="editor-titlebar">
+          <div class="editor-dots"><span></span><span></span><span></span></div>
+          <div class="editor-tabs">
+            <span class="editor-tab active">hello.js</span>
+            <span class="editor-tab">about.php</span>
+          </div>
+        </div>
+        <div class="editor-body">
+          <div class="code-line"><span class="ln">1</span><span class="tok-comment" data-i18n="hero_comment">// Sveiki! Es esmu</span></div>
+          <div class="code-line"><span class="ln">2</span><span class="tok-kw">const</span> <span class="tok-var">developer</span> <span class="tok-op">=</span> <span class="tok-brace">{</span></div>
+          <div class="code-line"><span class="ln">3</span><span class="tok-indent"></span><span class="tok-key">name:</span> <span class="tok-str">"Andris Tiļeckis"</span>,</div>
+          <div class="code-line"><span class="ln">4</span><span class="tok-indent"></span><span class="tok-key">role:</span> <span class="tok-str" data-i18n="hero_role">"Programmēšanas tehniķis"</span>,</div>
+          <div class="code-line"><span class="ln">5</span><span class="tok-indent"></span><span class="tok-key">stack:</span> <span class="tok-brace">[</span><span class="tok-str">"PHP"</span>, <span class="tok-str">"Laravel"</span>, <span class="tok-str">"JS"</span>, <span class="tok-str">"C++"</span><span class="tok-brace">]</span>,</div>
+          <div class="code-line"><span class="ln">6</span><span class="tok-indent"></span><span class="tok-key">status:</span> <span class="tok-str" data-i18n="hero_status">"Mācos un veidoju"</span></div>
+          <div class="code-line"><span class="ln">7</span><span class="tok-brace">}</span><span class="tok-op">;</span></div>
+          <div class="code-line cursor-line"><span class="ln">8</span><span class="cursor-blink">&nbsp;</span></div>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <h1 data-i18n="hero_title">Veidoju tīmekļa risinājumus, kas strādā —<br>ne tikai izskatās labi.</h1>
+        <p class="hero-sub" data-i18n="hero_sub">Vidzemes dizaina un tehnoloģiju tehnikuma programmēšanas tehniķa audzēknis. Interesē backend loģika, tīmekļa lietotnes un lietas, kas patiešām funkcionē.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero_cta_projects">Skatīt projektus</a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="hero_cta_contact">Sazināties</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="section-inner about-grid">
+      <div class="section-heading">
+        <span class="section-tag">#about</span>
+        <h2 data-i18n="about_title">Par mani</h2>
+      </div>
+      <div class="about-content">
+        <p data-i18n="about_p1">Mani sauc Andris Tiļeckis, un es apgūstu programmēšanas tehniķa specialitāti Vidzemes dizaina un tehnoloģiju tehnikumā. Man patīk saprast, kā lietas strādā "zem pārsega" — no HTML/CSS struktūras līdz PHP un C++ loģikai, kas to visu kustina.</p>
+        <p data-i18n="about_p2">Šobrīd padziļinu zināšanas Laravel ietvarā un JavaScript, veidojot nelielus, bet reālus projektus — tostarp šo portfolio. Mācos, eksperimentējot un labojot kļūdas, nevis tikai lasot teoriju.</p>
+
+        <div class="about-facts">
+          <div class="fact">
+            <span class="fact-label" data-i18n="about_fact1_label">Izglītība</span>
+            <span class="fact-value" data-i18n="about_fact1_value">Vidzemes dizaina un tehnoloģiju tehnikums</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label" data-i18n="about_fact2_label">Specialitāte</span>
+            <span class="fact-value" data-i18n="about_fact2_value">Programmēšanas tehniķis</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label" data-i18n="about_fact3_label">Fokuss</span>
+            <span class="fact-value" data-i18n="about_fact3_value">Web izstrāde &amp; backend loģika</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-heading">
+        <span class="section-tag">#skills</span>
+        <h2 data-i18n="skills_title">Prasmes</h2>
+      </div>
+
+      <div class="skills-columns">
+        <div class="skills-group">
+          <h3 data-i18n="skills_group_lang">Valodas</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-top"><span>JavaScript</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="85" style="--fill:85%"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-top"><span>PHP</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="80" style="--fill:80%"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-top"><span>CSS</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="85" style="--fill:85%"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-top"><span>HTML</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="90" style="--fill:90%"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-top"><span>C++</span><span class="skill-pct">65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-fill="65" style="--fill:65%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3 data-i18n="skills_group_fw">Ietvari &amp; rīki</h3>
+          <ul class="tag-list">
+            <li class="tag">Laravel</li>
+            <li class="tag">Git / GitHub</li>
+            <li class="tag">MySQL</li>
+            <li class="tag">VS Code</li>
+            <li class="tag">Composer</li>
+          </ul>
+          <p class="skills-note" data-i18n="skills_note">Prasmju līmeņi ir orientējoši un atspoguļo pašreizējo mācību progresu — tie pastāvīgi mainās.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <div class="section-heading">
+        <span class="section-tag">#projects</span>
+        <h2 data-i18n="projects_title">Projekti</h2>
+      </div>
+
+      <div class="repo-list">
+
+        <article class="repo-card">
+          <div class="repo-main">
+            <div class="repo-name-row">
+              <svg class="repo-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.98 1.2.75.75 0 1 1-1.47.3A2.5 2.5 0 0 1 4 11.5V2.5zm10.5-1H4.5a1 1 0 0 0-1 1v8.1c.313-.11.65-.16 1-.16h8V1.5z"></path></svg>
+              <a href="https://github.com/andris778/photo" target="_blank" rel="noopener noreferrer" class="repo-title">photo</a>
+              <span class="repo-badge badge-progress" data-i18n="project_photo_badge">Top izstrādē</span>
+            </div>
+            <p class="repo-desc" data-i18n="project_photo_desc">Fotoattēlu pārvaldības projekts, veidots ar PHP. Šobrīd turpinu tā funkcionalitātes un koda uzlabošanu.</p>
+            <div class="repo-meta">
+              <span class="repo-lang"><i class="dot dot-php"></i>PHP</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="repo-card">
+          <div class="repo-main">
+            <div class="repo-name-row">
+              <svg class="repo-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.98 1.2.75.75 0 1 1-1.47.3A2.5 2.5 0 0 1 4 11.5V2.5zm10.5-1H4.5a1 1 0 0 0-1 1v8.1c.313-.11.65-.16 1-.16h8V1.5z"></path></svg>
+              <span class="repo-title">portfolio</span>
+              <span class="repo-badge badge-live" data-i18n="project_portfolio_badge">Tiešsaistē</span>
+            </div>
+            <p class="repo-desc" data-i18n="project_portfolio_desc">Šī vietne — personīgais portfolio ar tumšo/gaišo režīmu un 3 valodām, veidots ar HTML, CSS un JavaScript.</p>
+            <div class="repo-meta">
+              <span class="repo-lang"><i class="dot dot-html"></i>HTML</span>
+              <span class="repo-lang"><i class="dot dot-css"></i>CSS</span>
+              <span class="repo-lang"><i class="dot dot-js"></i>JavaScript</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="more-projects">
+        <span data-i18n="projects_more_text">Vairāk projektu un koda paraugu:</span>
+        <a href="https://github.com/andris778" target="_blank" rel="noopener noreferrer">github.com/andris778</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="section-inner">
+      <div class="section-heading">
+        <span class="section-tag">#contact</span>
+        <h2 data-i18n="contact_title">Sazināties</h2>
+      </div>
+
+      <p class="contact-intro" data-i18n="contact_intro">Atvērts sadarbībai, praksei un ikvienam jautājumam par manis izveidoto. Raksti jebkurā no šiem kanāliem:</p>
+
+      <div class="terminal">
+        <div class="editor-titlebar">
+          <div class="editor-dots"><span></span><span></span><span></span></div>
+          <div class="editor-tabs"><span class="editor-tab active" data-i18n="contact_terminal_title">terminālis</span></div>
+        </div>
+        <div class="terminal-body">
+          <div class="term-line">
+            <span class="term-prompt">$</span> contact --email
+            <a href="mailto:atileckis@gmail.com" class="term-value">atileckis@gmail.com</a>
+          </div>
+          <div class="term-line">
+            <span class="term-prompt">$</span> contact --school-email
+            <a href="mailto:ipb24.a.tileckis@vtdt.edu.lv" class="term-value">ipb24.a.tileckis@vtdt.edu.lv</a>
+          </div>
+          <div class="term-line">
+            <span class="term-prompt">$</span> contact --github
+            <a href="https://github.com/andris778" target="_blank" rel="noopener noreferrer" class="term-value">github.com/andris778</a>
+          </div>
+          <div class="term-line term-line-static">
+            <span class="term-prompt">$</span> <span class="cursor-blink">&nbsp;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span data-i18n="footer_text">Andris Tiļeckis — veidots ar HTML, CSS &amp; JavaScript</span>
+    <span class="footer-year">© 2026</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
