@@ -14,7 +14,7 @@ const translations = {
     hero_role: '"Programmēšanas tehniķis"',
     hero_status: '"Mācos un veidoju"',
     hero_title: "Veidoju tīmekļa risinājumus, kas strādā —<br>ne tikai izskatās labi.",
-    hero_sub: "Vidzemes dizaina un tehnoloģiju tehnikuma programmēšanas tehniķa audzēknis. Interesē backend loģika, tīmekļa lietotnes un lietas, kas patiešām funkcionē.",
+    hero_sub: "Vidzemes tehnoloģiju un dizaina tehnikuma audzēknis programmēšanas tehniķis. Interesē backend loģika, tīmekļa lietotnes un lietas, kas patiešām funkcionē, kā arī ļoti interesē dizains.",
     hero_cta_projects: "Skatīt projektus",
     hero_cta_contact: "Sazināties",
 
@@ -35,13 +35,13 @@ const translations = {
 
     projects_title: "Projekti",
     project_photo_badge: "Top izstrādē",
-    project_photo_desc: "Fotoattēlu pārvaldības projekts, veidots ar PHP. Šobrīd turpinu tā funkcionalitātes un koda uzlabošanu.",
+    project_photo_desc: "PHOTO projekts, veidots ar PHP. Šobrīd turpinu tā funkcionalitātes un koda uzlabošanu.",
     project_portfolio_badge: "Tiešsaistē",
     project_portfolio_desc: "Šī vietne — personīgais portfolio ar tumšo/gaišo režīmu un 3 valodām, veidots ar HTML, CSS un JavaScript.",
     projects_more_text: "Vairāk projektu un koda paraugu:",
 
     contact_title: "Sazināties",
-    contact_intro: "Atvērts sadarbībai, praksei un ikvienam jautājumam par manis izveidoto. Raksti jebkurā no šiem kanāliem:",
+    contact_intro: "Atvērts sadarbībai, praksei un ikvienam jautājumam par manis izveidoto.",
     contact_terminal_title: "terminālis",
 
     footer_text: "Andris Tiļeckis — veidots ar HTML, CSS & JavaScript",
@@ -57,15 +57,15 @@ const translations = {
     hero_role: '"Programming technician"',
     hero_status: '"Learning and building"',
     hero_title: "I build web solutions that work —<br>not just ones that look good.",
-    hero_sub: "Programming technician student at Vidzeme School of Design and Art. Interested in backend logic, web apps, and things that actually function.",
+    hero_sub: "Programming technician student at Vidzeme Technical School of Design and Technology. Interested in backend logic, web apps, and things that actually function — and I'm also very into design.",
     hero_cta_projects: "View projects",
     hero_cta_contact: "Get in touch",
 
     about_title: "About me",
-    about_p1: "My name is Andris Tiļeckis, and I'm studying to become a programming technician at the Vidzeme School of Design and Art. I like understanding how things work under the hood — from HTML/CSS structure to the PHP and C++ logic that drives it.",
+    about_p1: "My name is Andris Tiļeckis, and I'm studying to become a programming technician at Vidzeme Technical School of Design and Technology. I like understanding how things work under the hood — from HTML/CSS structure to the PHP and C++ logic that drives it.",
     about_p2: "Right now I'm deepening my knowledge of Laravel and JavaScript by building small but real projects — including this portfolio. I learn by experimenting and fixing my own mistakes, not just reading theory.",
     about_fact1_label: "Education",
-    about_fact1_value: "Vidzeme School of Design and Art",
+    about_fact1_value: "Vidzeme Technical School of Design and Technology",
     about_fact2_label: "Specialty",
     about_fact2_value: "Programming technician",
     about_fact3_label: "Focus",
@@ -78,13 +78,13 @@ const translations = {
 
     projects_title: "Projects",
     project_photo_badge: "In progress",
-    project_photo_desc: "A photo management project built with PHP. Still improving its functionality and code.",
+    project_photo_desc: "PHOTO project, built with PHP. I'm currently continuing to improve its functionality and code.",
     project_portfolio_badge: "Live",
     project_portfolio_desc: "This site — my personal portfolio with dark/light mode and 3 languages, built with HTML, CSS and JavaScript.",
     projects_more_text: "More projects and code samples:",
 
     contact_title: "Contact",
-    contact_intro: "Open to collaboration, internships, and any questions about what I've built. Reach out through any of these channels:",
+    contact_intro: "Open to collaboration, internships, and any questions about what I've built.",
     contact_terminal_title: "terminal",
 
     footer_text: "Andris Tiļeckis — built with HTML, CSS & JavaScript",
@@ -100,7 +100,7 @@ const translations = {
     hero_role: '"Техник-программист"',
     hero_status: '"Учусь и создаю"',
     hero_title: "Создаю веб-решения, которые работают —<br>а не просто хорошо выглядят.",
-    hero_sub: "Учащийся по специальности техник-программист в Видземском техникуме дизайна и технологий. Интересуюсь backend-логикой, веб-приложениями и тем, что реально работает.",
+    hero_sub: "Учащийся по специальности техник-программист в Видземском техникуме дизайна и технологий. Интересуюсь backend-логикой, веб-приложениями и тем, что реально работает, а также очень интересуюсь дизайном.",
     hero_cta_projects: "Смотреть проекты",
     hero_cta_contact: "Связаться",
 
@@ -121,13 +121,13 @@ const translations = {
 
     projects_title: "Проекты",
     project_photo_badge: "В разработке",
-    project_photo_desc: "Проект для управления фотографиями на PHP. Сейчас продолжаю улучшать функциональность и код.",
+    project_photo_desc: "Проект PHOTO, созданный на PHP. Сейчас продолжаю улучшать его функциональность и код.",
     project_portfolio_badge: "Онлайн",
     project_portfolio_desc: "Этот сайт — моё личное портфолио с тёмным/светлым режимом и 3 языками, создано на HTML, CSS и JavaScript.",
     projects_more_text: "Больше проектов и примеров кода:",
 
     contact_title: "Контакты",
-    contact_intro: "Открыт для сотрудничества, стажировок и любых вопросов о моих проектах. Пишите по любому из каналов:",
+    contact_intro: "Открыт для сотрудничества, стажировок и любых вопросов о моих проектах.",
     contact_terminal_title: "терминал",
 
     footer_text: "Andris Tiļeckis — создано с HTML, CSS & JavaScript",
