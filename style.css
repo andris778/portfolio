@@ -395,6 +395,7 @@ a.repo-title:hover{ text-decoration: underline; }
 }
 .badge-progress{ color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
 .badge-live{ color: var(--accent-2); border-color: color-mix(in srgb, var(--accent-2) 40%, var(--border)); }
+.badge-team{ color: var(--syn-kw); border-color: color-mix(in srgb, var(--syn-kw) 40%, var(--border)); }
 .repo-desc{ color: var(--text-muted); font-size: 14px; margin: 10px 0 12px; max-width: 62ch; }
 .repo-meta{ display: flex; gap: 16px; }
 .repo-lang{ display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--text-muted); }
@@ -403,6 +404,7 @@ a.repo-title:hover{ text-decoration: underline; }
 .dot-html{ background: #e34c26; }
 .dot-css{ background: #563d7c; }
 .dot-js{ background: #d4b62b; }
+.dot-sql{ background: #dd8c26; }
 
 .more-projects{
   margin-top: 24px;
